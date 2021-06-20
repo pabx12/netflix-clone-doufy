@@ -33,6 +33,17 @@
     object-fit: contain;
     padding-right: 10px;
 }
+.login__button{
+    position: fixed;
+    top:20px;
+    cursor: pointer;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: white;
+}
 .nav__black{
     background-color: #111;
 }

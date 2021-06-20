@@ -1,0 +1,109 @@
+.login__form__content{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background-color: rgba(12, 11, 11, 0.8);
+}
+.login___form{
+    display: grid;
+    grid-template-columns: 1f;
+    grid-column-gap: 15px;
+    align-content: center;
+    margin-bottom: auto;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 80vh;
+    color: white;
+    background-color: rgba(12, 11, 11, 0.8);
+}
+.form__login__title__content{
+    position: relative;
+    padding-top: 25px;
+}
+.form__login__title{
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 51px;
+    margin-top: 35px;
+    color: white
+}
+.form__row{
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+}
+.form__group{
+    min-width: 100%;
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    background-color: white;
+}
+.form__group input{
+    min-width: 100%;
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border:none;
+}
+.form__group input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.form__group input::after{
+    border-bottom: 2px solid #e87c03;
+}
+.btn_login{
+    background-color: #e50914;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border:none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.form__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+.form__bottom_checkbox {
+    margin-right: 2px;
+}
+.login__form__content__bottom{
+    display: flex;
+    flex-direction: column;
+}
+.fb__icon{
+    background-color: blue;
+    padding: 2px;
+}
+.fb__label{
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 300;
+}
+.register__text{
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+.register__link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.recapcha{
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}

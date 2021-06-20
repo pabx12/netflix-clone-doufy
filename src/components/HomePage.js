@@ -1,10 +1,50 @@
 import React from 'react'
-
+import Baner from './Baner';
+import NavBar from './NavBar';
+import requests from '../Requests';
+import Row from './Row';
 function HomePage() {
+    
     return (
-        <div>
+        <>
+            <NavBar/>
+            <Baner/>
+            <Row 
+                title='Netflix Originals'
+                fetchUrl={requests.fetchNetFlixOriginals}
+                isLarge
+            />
+            <Row 
+                title='Netflix Trendings'
+                fetchUrl={requests.fetchTrending}
             
-        </div>
+            />
+            <Row 
+                title='Top Rated'
+                fetchUrl={requests.fetchTopRated}
+            
+            />
+            <Row 
+                title='Actions'
+                fetchUrl={requests.fetchActionMovies}
+            />
+            <Row 
+                title='Horrors'
+                fetchUrl={requests.fetchHorrorMovies}
+            />
+            <Row 
+                title='Romantic'
+                fetchUrl={requests.fetchRomanceMovies}
+            />
+            <Row 
+                title='Commedies'
+                fetchUrl={requests.fetchComedyMovies}
+            />
+            <Row 
+                title='Documentaires'
+                fetchUrl={requests.fetchDocumentaries}
+            />
+        </>
     )
 }
 

@@ -17,12 +17,14 @@ function Row({title, fetchUrl, isLarge=false}) {
             <h2>{title}</h2>
             <div className="row__posters">
                 {movies.map((movie, index) => (
-                    <img 
-                    key={index}
-                    className={`movie__img ${isLarge && " movie__img__large"}`}
-                    src={`https://image.tmdb.org/t/p/original/${isLarge ? movie.poster_path : movie.backdrop_path }`} 
-                    alt={movie.name}
-                    />
+                    ( (isLarge &&  movie.poster_path) || (!isLarge && movie.backdrop_path)) &&
+                   (<img 
+                        key={index}
+                        className={`movie__img ${isLarge && " movie__img__large"}`}
+                        src={`https://image.tmdb.org/t/p/original/${isLarge ? movie.poster_path : movie.backdrop_path }`} 
+                        alt={movie.name}
+                        />
+                     )
                 ))}
             </div>
         </div>
