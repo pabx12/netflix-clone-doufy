@@ -47,3 +47,34 @@
 .nav__black{
     background-color: #111;
 }
+.dropdown{
+    position: absolute;
+    right: 15px;
+    top:90px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.dropdown__hide{
+    display: none;
+}
+.dropdown__item{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown__item p{
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+}
+.dropdown__item p:hover{
+    color: white;
+    background-color: #e50914;
+}
+.nav__avatar:hover .dropdown{
+    display: block;
+}

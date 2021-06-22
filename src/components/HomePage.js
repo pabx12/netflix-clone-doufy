@@ -3,11 +3,11 @@ import Baner from './Baner';
 import NavBar from './NavBar';
 import requests from '../Requests';
 import Row from './Row';
-function HomePage() {
+function HomePage({handleLogOut}) {
     
     return (
         <>
-            <NavBar/>
+            <NavBar handleLogOut={handleLogOut}/>
             <Baner/>
             <Row 
                 title='Netflix Originals'

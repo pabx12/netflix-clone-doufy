@@ -1,8 +1,8 @@
 .login__form__content{
     width: 100%;
     position: relative;
-    min-height: 100vh;
-    background-color: rgba(12, 11, 11, 0.8);
+    min-height: 660px;
+    background-color: rgba(0,0,0,.75);
 }
 .login___form{
     display: grid;
@@ -10,14 +10,16 @@
     grid-column-gap: 15px;
     align-content: center;
     margin-bottom: auto;
-    width: 400px;
+    margin-bottom: 90px;
+    max-width: 400px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 100px;
-    margin-bottom: 50px;
-    height: 80vh;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: 90vh;
     color: white;
-    background-color: rgba(12, 11, 11, 0.8);
+    background-color: rgba(0,0,0,.75);
 }
 .form__login__title__content{
     position: relative;
@@ -41,13 +43,21 @@
     flex-grow: 1;
     margin-bottom: 15px;
     background-color: white;
+    flex-direction: column;
+}
+.has__error{
+        color: #e87c03;
+        margin-bottom: -6px;
+        padding: 6px 3px;
+        font-size: 12px;
 }
 .form__group input{
     min-width: 100%;
     display: flex;
-    background-color: white;
+    background: #333;
     padding: 15px;
     border:none;
+    color: white;
 }
 .form__group input:focus, textarea:focus, select:focus{
     outline: none;
@@ -77,6 +87,8 @@
 }
 .form__bottom_checkbox {
     margin-right: 2px;
+    margin-bottom: 6px;
+    display: inline-block;
 }
 .login__form__content__bottom{
     display: flex;
@@ -85,6 +97,8 @@
 .fb__icon{
     background-color: blue;
     padding: 2px;
+    margin-bottom: -5px;
+    background-color: rgba(0,0,0,.75);
 }
 .fb__label{
     font-size: 12px;
@@ -96,6 +110,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 16px;
+    cursor: pointer;
 }
 .register__link{
     text-decoration: none;

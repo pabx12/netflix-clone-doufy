@@ -8,6 +8,7 @@
     width: 100%;
     height: 100vh;
     color: white;
+    background-color: #000;
 }
 .welcome__title{
     font-size: 46px;
@@ -28,51 +29,36 @@
     margin-bottom: 15px;
 }
 .welcome__form{
-    width: 580px;
     display: flex;
+    background:white;
+    width: 600px;
 }
 .welcome__input__content{
-    flex-grow:2;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: white;
+    flex:1;
 }
 .welcome__input{
-    /* padding-top: 15px;
-    padding-bottom: 15px; */
-    padding: 5px;
+    flex: 1;
+    padding:  10px;
     border: none;
 }
 .welcome__input:focus, textarea:focus, select:focus{
     outline: none;
 }
-.welcome__button__content{
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-    -moz-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-}
 .welcome__button{
     background-color: #e50914;
     color: white;
-    padding: 15px 20px;
-    display: block;
+    padding:  10px;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    border: none;
 }
-.span__icon{
-    display: inline-block;
-    font-size: 18px;
-    line-height: 18px;
-}
+
 .fa__angle{
     text-align: center;
     font-size: 24px;
     display: inline-block;
+    margin-bottom: -5px;
+    font-weight: 500;
 }
 /* #e50914; */
